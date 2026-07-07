@@ -156,35 +156,6 @@ export default function Home() {
       <Navbar cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} />
       <Hero />
       
-      {/* Stats Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-transform duration-300">
-            <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">
-              500+
-            </div>
-            <div className="text-gray-600 text-sm font-medium">Products</div>
-          </div>
-          <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-transform duration-300">
-            <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">
-              10K+
-            </div>
-            <div className="text-gray-600 text-sm font-medium">Customers</div>
-          </div>
-          <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-transform duration-300">
-            <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">
-              4.9★
-            </div>
-            <div className="text-gray-600 text-sm font-medium">Rating</div>
-          </div>
-          <div className="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-transform duration-300">
-            <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">
-              24/7
-            </div>
-            <div className="text-gray-600 text-sm font-medium">Support</div>
-          </div>
-        </div>
-      </section>
 
       {/* Featured Products Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
