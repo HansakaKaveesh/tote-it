@@ -543,3 +543,33 @@ body {
 .animation-delay-1500 {
   animation-delay: 1.5s;
 }
+
+/* Additional ocean-themed animations */
+
+@keyframes bubble-float-ambient {
+  0%, 100% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-100vh) translateX(20px) scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-bubble-float-ambient {
+  animation: bubble-float-ambient 15s ease-in-out infinite;
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 1s ease-in-out infinite;
+}
